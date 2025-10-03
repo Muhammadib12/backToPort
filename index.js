@@ -5,10 +5,10 @@ import dotenv from "dotenv";
 import likeRouter from "./src/routes/like.js";
 import { connectDb } from "./src/lib/mongodb.js";
 import { visitEmailer } from "./src/lib/visitEmailer.js";
-import { verifyEmailTransport } from "./src/lib/mailer.js";
+
 
 dotenv.config();
-verifyEmailTransport();
+
 
 const app = express();
 
